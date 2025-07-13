@@ -121,6 +121,37 @@ public class Kasir {
                 Alat.pause(input);
                 
             }
+            else if (menu == 2) {
+                System.out.print("Pilih Alat : 1. Arrow | 2. Arm Guard | 3. Bow Stand | 4. Finger tab : ");
+                int pilih2 = input.nextInt();
+                System.out.print("Masukan Jumlah Item: ");
+                int jmlItem = input.nextInt();
+                int result;
+                String namaitem;
+
+                if (pilih2 == 1) {
+                    namaitem = "Arrow";
+                    result = brbg[0].totalHarga(jmlItem);
+                    System.out.println("Harga untuk " + jmlItem + namaitem + "adalah " + result );
+                }
+                else if (pilih2 == 2) {
+                    namaitem = "Arm Guard";
+                    result = brbg[1].totalHarga(jmlItem);
+                    System.out.println("Harga untuk " + jmlItem + namaitem + "adalah " + result );
+                }
+                else if (pilih2 == 3){
+                    namaitem = "Bow Stand";
+                    result = brbg[2].totalHarga(jmlItem);
+                    System.out.println("Harga untuk " + jmlItem + namaitem + "adalah " + result );
+                }
+                else if (pilih2 == 4){
+                    namaitem = "Finger Tab";
+                    result = brbg[3].totalHarga(jmlItem);
+                    System.out.println("Harga untuk " + jmlItem + namaitem + "adalah " + result );
+                } 
+
+            
+            }
 
             else if (menu == 4){
 
