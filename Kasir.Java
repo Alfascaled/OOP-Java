@@ -53,11 +53,19 @@ class Alat {
         }
     }
 
+    void cekStok() {
+        System.out.println("Stok " + this.Nama + " ada : " + this.Stok);
+    }
+
     static void pause(Scanner input){
     System.out.print("Tekan ENTER untuk kembali ke menu...");
     input.nextLine();
     input.nextLine();
+
+    
 }
+
+
      
 } // End of Alat class 
 
@@ -153,11 +161,37 @@ public class Kasir {
             
             }
 
-            else if (menu == 4){
+            else if (menu == 3){
+                System.out.print("Pilih Alat : 1. Arrow | 2. Arm Guard | 3. Bow Stand | 4. Finger tab : ");
+                int pilih3 = input.nextInt();
 
+
+                if (pilih3 == 1) {
+                    System.out.println("======================");
+                    brbg[0].cekStok();
+                    System.out.println("======================");
+                }
+
+                else if (pilih3 == 2) {
+                    System.out.println("======================");
+                    brbg[1].cekStok();
+                    System.out.println("======================");
+                }
+
+                else if (pilih3 == 3) {
+                    System.out.println("======================");
+                    brbg[2].cekStok();
+                    System.out.println("======================");
+                }
+
+                else if (pilih3 == 4) {
+                    System.out.println("======================");
+                    brbg[3].cekStok();
+                    System.out.println("======================");
+            }
+
+            else if (menu == 4) {
                 break;
-  
-
             }
 
 
@@ -168,6 +202,8 @@ public class Kasir {
 
    
     }
+
+}
 
 
         
